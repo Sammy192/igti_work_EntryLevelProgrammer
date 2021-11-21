@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head lang="pt-BR">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulador Financimento</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section id="simulacao" class="simulacao">
+    <h1>Simulacao de financiamento</h1>
+    <label for="valorSimulado">Valor:</label>
+    <input name="valorSimulado" id="valorSimulado" type="number" />
+
+    <label for="prazoAnos">Prazo (anos):  </label>
+    <input name="prazoAnos" id="prazoAnos" type="number" />
+
+    <label for="jurosAno">Juros ao ano:  </label>
+    <input name="jurosAno" id="jurosAno" type="number" />
+
+    <div class="simulacaobtn">
+      <button onclick="simular()" class="btn">Simular</button>
+    </div>
+  </section>
+
+
+  <section id="resultado" class="resultado">
+    <h1>Resultado</h1>
+
+    <label for="prazoMeses">Prazo (meses):</label>
+    <input name="prazoMeses" id="prazoMeses" type="number" />
+
+    <label for="jurosMes">Juros ao mes:  </label>
+    <input name="jurosMes" id="jurosMes" type="number" />
+
+    <label for="jurosAcumulados">Juros acumulados:  </label>
+    <input name="jurosAcumulados" id="jurosAcumulados" type="number" />
+  </section>
+
+  <section id="tabela">
+    <table>
+      <thead>
+        <tr>
+          <th>Prestacao</th>
+          <th>Amortizacao</th>
+          <th>Juros</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-tbody">
+      </tbody>
+    </table>
+  </section>
+
+  <script src="somatest.js"></script>
+</body>
